@@ -6,7 +6,7 @@ import GameOver from "./GameOver";
 import Nav from "./Nav";
 import cardDeckImg from "../assets/img/card-deck2.png";
 import stormImg from "../src/assets/img/game-cards-logos/storm.jpg";
-import blackwidowImg from "../src/assets/img/game-cards-logos/black_widow.jpg"
+import blackwidowImg from "../src/assets/img/game-cards-logos/black_widow.jpg";
 import daredevilImg from "../src/assets/img/game-cards-logos/daredevil.jpg";
 import deadpoolImg from "../src/assets/img/game-cards-logos/deadpool.jpg";
 import hawkeyeImg from "../src/assets/img/game-cards-logos/hawkeye.jpg";
