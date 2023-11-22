@@ -4,29 +4,45 @@ import { useEffect, useState } from "react";
 import SingleCard from "./SingleCard";
 import GameOver from "./GameOver";
 import Nav from "./Nav";
+import cardDeckImg from "../assets/img/card-deck2.png";
+import stormImg from "../src/assets/img/game-cards-logos/storm.jpg";
+import blackwidowImg from "../src/assets/img/game-cards-logos/black_widow.jpg"
+import daredevilImg from "../src/assets/img/game-cards-logos/daredevil.jpg";
+import deadpoolImg from "../src/assets/img/game-cards-logos/deadpool.jpg";
+import hawkeyeImg from "../src/assets/img/game-cards-logos/hawkeye.jpg";
+import lokiImg from "../src/assets/img/game-cards-logos/loki.jpg";
+import captainmarvelImg from "../src/assets/img/game-cards-logos/captain_marvel.jpg";
+import ironmanImg from "../src/assets/img/game-cards-logos/ironman.jpg";
+import punisherImg from "../src/assets/img/game-cards-logos/punisher.jpg";
+import spidermanImg from "../src/assets/img/game-cards-logos/spiderman.jpg";
+import thorImg from "../src/assets/img/game-cards-logos/thor.jpg";
+import wolverineImg from "../src/assets/img/game-cards-logos/wolverine.jpg";
+import americaImg from "../src/assets/img/game-cards-logos/america.jpg";
+import pantherImg from "../src/assets/img/game-cards-logos/black_panther.jpg";
+import hulkImg from "../src/assets/img/game-cards-logos/hulk.jpg";
 
 const cardImages = [
-  { src: "../src/assets/img/game-cards-logos/storm.jpg", matched: false },
-  { src: "../src/assets/img/game-cards-logos/black_widow.jpg", matched: false },
-  { src: "../src/assets/img/game-cards-logos/daredevil.jpg", matched: false },
-  { src: "../src/assets/img/game-cards-logos/deadpool.jpg", matched: false },
-  { src: "../src/assets/img/game-cards-logos/hawkeye.jpg", matched: false },
-  { src: "../src/assets/img/game-cards-logos/loki.jpg", matched: false },
+  { src: {stormImg}, matched: false },
+  { src: {blackwidowImg}, matched: false },
+  { src: {daredevilImg}, matched: false },
+  { src: {deadpoolImg}, matched: false },
+  { src: {hawkeyeImg}, matched: false },
+  { src: {lokiImg}, matched: false },
   {
-    src: "../src/assets/img/game-cards-logos/captain_marvel.jpg",
+    src: {captainmarvelImg},
     matched: false,
   },
-  { src: "../src/assets/img/game-cards-logos/ironman.jpg", matched: false },
-  { src: "../src/assets/img/game-cards-logos/punisher.jpg", matched: false },
-  { src: "../src/assets/img/game-cards-logos/spiderman.jpg", matched: false },
-  { src: "../src/assets/img/game-cards-logos/thor.jpg", matched: false },
-  { src: "../src/assets/img/game-cards-logos/wolverine.jpg", matched: false },
-  { src: "../src/assets/img/game-cards-logos/america.jpg", matched: false },
+  { src: {ironmanImg}, matched: false },
+  { src: {punisherImg}, matched: false },
+  { src: {spidermanImg}, matched: false },
+  { src: {thorImg}, matched: false },
+  { src: {wolverineImg}, matched: false },
+  { src: {americaImg}, matched: false },
   {
-    src: "../src/assets/img/game-cards-logos/black_panther.jpg",
+    src: {pantherImg},
     matched: false,
   },
-  { src: "../src/assets/img/game-cards-logos/hulk.jpg", matched: false },
+  { src: {hulkImg}, matched: false },
 ];
 
 export default function Board({}) {
@@ -156,7 +172,7 @@ export default function Board({}) {
           onClick={shuffledCards}
           onMouseEnter={shake}
           onMouseLeave={shake}
-          src="..\src\assets\img\card-deck2.png"
+          src={cardDeckImg}
           alt="card deck"
         />
         <p id="instruction">Click on card deck to shuffle cards</p>

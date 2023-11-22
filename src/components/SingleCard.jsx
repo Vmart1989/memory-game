@@ -1,4 +1,5 @@
 import "./SingleCard.css";
+import cardBackImg from "../assets/img/game-cards-logos/back.jpg";
 
 export default function SingleCard({
   card,
@@ -27,7 +28,7 @@ export default function SingleCard({
         <img
           className="back"
           onClick={handleClick}
-          src="..\src\assets\img\game-cards-logos\back.jpg"
+          src={cardBackImg}
           alt="card back"
         />
       </div>
