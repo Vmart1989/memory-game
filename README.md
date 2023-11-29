@@ -40,6 +40,7 @@ Screenshots
 #![hard_board](https://github.com/Vmart1989/memory-game/assets/87582590/456491fa-b174-43e6-ad71-a76501350417)
 
 ## Demo
+https://comicmemory.netlify.app/
 https://www.loom.com/share/579deceae0e44c839417245307d58018?sid=cb91a74c-0a58-4cdd-b6a6-e27e0b1969fc
 
 ## License
